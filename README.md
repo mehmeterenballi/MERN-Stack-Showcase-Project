@@ -1,7 +1,7 @@
 # appfellasInterview
 MERN Stack project with Vite, Typescript, Shadcn and Aceternity UI for AppFellas technical interview
 
-
+![Backend6-MyFlights-CRUD](https://github.com/user-attachments/assets/9a6233f2-a6a8-4ce3-b084-20934b8f7412)
 ![Backend5-MyFlights-CRUD](https://github.com/user-attachments/assets/9cf64f11-17fa-4314-ba87-cf60d7cb7fae)
 ![Backend4-MyFlights-CRUD](https://github.com/user-attachments/assets/127497b6-4ded-4ec2-8dfd-7d71af069530)
 ![Backend3-MyFlights-CRUD](https://github.com/user-attachments/assets/f5a82e2c-c835-488b-a3a0-e4535656e247)
