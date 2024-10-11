@@ -1,5 +1,5 @@
-# appfellasInterview
-MERN Stack project with Vite, Typescript, Shadcn and Aceternity UI for AppFellas technical interview
+# Mern Stack Showcase Project
+MERN Stack project with Vite, Typescript, Shadcn and Aceternity UI and more for showcase study
 
 ![Backend6-MyFlights-CRUD](https://github.com/user-attachments/assets/9a6233f2-a6a8-4ce3-b084-20934b8f7412)
 ![Backend5-MyFlights-CRUD](https://github.com/user-attachments/assets/9cf64f11-17fa-4314-ba87-cf60d7cb7fae)
