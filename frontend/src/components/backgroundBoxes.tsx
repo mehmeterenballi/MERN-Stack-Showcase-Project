@@ -1,7 +1,7 @@
 "use client";
 import { Boxes } from "./ui/background-boxes";
 
-export function BackgroundBoxes() {
+export const BackgroundBoxes = (props: any) => {
     return (
         (<div
             className="h-screen relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg" style={{position: "relative", zIndex: "1"}}>

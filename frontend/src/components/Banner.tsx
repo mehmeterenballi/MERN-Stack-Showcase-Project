@@ -6,15 +6,15 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { CalendarIcon, MapPinIcon, UserIcon } from "lucide-react"
-import { BackgroundBoxes } from "./backgroundBoxes"
 
 export function Banner() {
     return (
         <div className="relative bg-blue-900 z-50">
-            <header className="absolute top-0 left-0 right-0 bg-transparent text-white p-7">
-                <nav className="container mx-auto flex justify-between items-center">
-                    <div className="text-2xl font-bold">Airtnt</div>
-                    {/* <div className="space-x-4">
+            <div className="filter backdrop-blur-sm absolute w-screen">
+                <header className="top-0 left-0 right-0 bg-transparent text-white p-7">
+                    <nav className="container mx-auto flex justify-between items-center">
+                        <div className="text-2xl font-bold">Airtnt</div>
+                        {/* <div className="space-x-4">
                         <a href="#" className="hover:underline">Uçak Bileti</a>
                         <a href="#" className="hover:underline">Otel</a>
                         <a href="#" className="hover:underline">Otobüs</a>
@@ -22,28 +22,27 @@ export function Banner() {
                         <a href="#" className="hover:underline">Transfer</a>
                         <a href="#" className="hover:underline">Yardım</a>
                         </div> */}
-                    <div className="flex items-center space-x-4">
-                        {/* <Button variant="outline" className="text-white border-white hover:bg-white hover:text-blue-900">
+                        <div className="flex items-center space-x-4">
+                            {/* <Button variant="outline" className="text-white border-white hover:bg-white hover:text-blue-900">
                             Uygulamayı indir
                             </Button> */}
-                        <Select>
-                            <SelectTrigger className="w-[80px] bg-transparent text-white border-white">
-                                <SelectValue placeholder="TRY" />
-                            </SelectTrigger>
-                            <SelectContent className="bg-white">
-                                <SelectItem value="try">TRY</SelectItem>
-                                <SelectItem value="usd">USD</SelectItem>
-                                <SelectItem value="eur">EUR</SelectItem>
-                            </SelectContent>
-                        </Select>
-                        <Button variant="outline" className="text-white border-white hover:bg-white hover:text-blue-900">
-                            Giriş yap
-                        </Button>
-                    </div>
-                </nav>
-            </header>
-            {/* <BackgroundBoxes> */}
-                <main className="container mx-auto pt-32 pb-16">
+                            <Select>
+                                <SelectTrigger className="w-[80px] bg-transparent text-white border-white">
+                                    <SelectValue placeholder="TRY" />
+                                </SelectTrigger>
+                                <SelectContent className="bg-white">
+                                    <SelectItem value="try">TRY</SelectItem>
+                                    <SelectItem value="usd">USD</SelectItem>
+                                    <SelectItem value="eur">EUR</SelectItem>
+                                </SelectContent>
+                            </Select>
+                            <Button variant="outline" className="text-white border-white hover:bg-white hover:text-blue-900">
+                                Giriş yap
+                            </Button>
+                        </div>
+                    </nav>
+                </header>
+                <main className="container mx-auto pt-16 pb-16">
                     <h1 className="text-4xl font-bold text-white mb-8 text-center">Uçak biletlerinizi Airtnt güvencesiyle alın</h1>
                     <div className="bg-white rounded-lg p-6 shadow-lg">
                         <div className="mb-4">
@@ -118,7 +117,7 @@ export function Banner() {
                         </div>
                     </div>
                 </main>
-            {/* </BackgroundBoxes> */}
+            </div>
         </div >
     )
 }
