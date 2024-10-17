@@ -4,8 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import { NavbarContainer } from './components/Navbar'
 import { BackgroundBoxes } from './components/backgroundBoxes'
-import { Banner } from './components/Banner'
-import Footer from './components/Footer'
 
 function App() {
 
