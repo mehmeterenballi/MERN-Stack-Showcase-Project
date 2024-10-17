@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Flight } from '../interfaces/FlightInterface';
 import { AnimatedModal } from '../components/animetedModal';
+import { Banner } from '@/components/Banner';
 
 const Home: React.FC = () => {
     const [flights, setFlights] = useState<Flight[]>([]);
@@ -23,21 +24,24 @@ const Home: React.FC = () => {
         fetchFlights(); // fetchFlights'ı çağırıyoruz
     }, []);
 
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error}</p>;
+    // if (loading) return <p>Loading...</p>;
+    // if (error) return <p>Error: {error}</p>;
 
     return (
-        <>
-            <h1>Airline Companies</h1>
-            <AnimatedModal></AnimatedModal>
-            <ul>
+        <main className='relative w-full z-40'>
+            <Banner />
+            <div className='bg-transparent w-9/12 px-14 mx-auto'>
+                <h1 className='text-lg'>Bütün Uçuşlar</h1>
+                <AnimatedModal />
+            </div>
+            {/* <ul>
                 {flights.map((flight, index) => (
                     <li key={index}>
-                        {flight.flightName} - {flight.flightNumber} ({flight.aircraftType.iataMain})
+                    {flight.flightName} - {flight.flightNumber} ({flight.aircraftType.iataMain})
                     </li>
-                ))}
-            </ul>
-        </>
+                    ))}
+                    </ul> */}
+        </main>
     );
 };
 

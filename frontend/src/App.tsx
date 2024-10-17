@@ -1,4 +1,3 @@
-import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // pages and components
@@ -12,19 +11,18 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Banner />
-      <NavbarContainer />
-      <BackgroundBoxes>
-        <div className="pages">
-          <Routes>
-            <Route
-              path='/'
-              element={<Home />}
-            />
-          </Routes>
-        </div>
-      </BackgroundBoxes>
-      <Footer />
+      {/* <Banner /> */}
+      <div className='relative'>
+        <BackgroundBoxes />
+        <NavbarContainer />
+        <Routes>
+          <Route
+            path='/'
+            element={<Home />}
+          />
+        </Routes>
+        {/* <Footer /> */}
+      </div>
     </BrowserRouter>
   )
 }

@@ -9,8 +9,8 @@ import { CalendarIcon, MapPinIcon, UserIcon } from "lucide-react"
 
 export function Banner() {
     return (
-        <div className="relative bg-blue-900 z-50">
-            <div className="filter backdrop-blur-sm absolute w-screen">
+        <div className="w-screen z-30">
+            <div className="filter backdrop-blur-sm w-full">
                 <header className="top-0 left-0 right-0 bg-transparent text-white p-7">
                     <nav className="container mx-auto flex justify-between items-center">
                         <div className="text-2xl font-bold">Airtnt</div>
